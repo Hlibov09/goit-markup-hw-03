@@ -36,8 +36,24 @@ body {
   box-sizing: border-box;
 }
 
-/* HEDER*/
+.section {
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 
+/*HEDER*/
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .heder-logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -56,10 +72,6 @@ body {
   outline: 1px solid tomato;
 }
 
-.section {
-  padding: 94px 15px;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -73,7 +85,7 @@ body {
   overflow: hidden;
 }
 
-.heder {
+.header {
   display: flex;
   width: 1200px;
   height: 80;
@@ -84,9 +96,11 @@ body {
 
 .heder-nav {
   display: flex;
+  align-items: center;
 }
+
 .heder-logo {
-  padding: 24px, 93px 25px 0px;
+  margin-right: 93px;
 }
 
 .logo-accent {
@@ -94,21 +108,21 @@ body {
 }
 .heder-list {
   display: flex;
-  padding-top: 32px;
-  padding-right: 281px;
-  padding-bottom: 32px;
 }
 .adress-list {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   align-items: flex-end;
+  margin-left: auto;
 }
 
 .heder-item a {
   color: var(--first-color);
+}
+
+.heder-item:not(:last-child) {
   padding-right: 50px;
 }
+
 .mail {
   padding-right: 50px;
 }
@@ -124,6 +138,10 @@ body {
 .adress-list a:focus {
   color: var(--accent-color);
 }
+.heder-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 .heder-item,
 .adress-list {
@@ -137,8 +155,8 @@ body {
 
 .service {
   background: var(--background-color);
-  /*width: 1200px;
-  margin: 0 auto;*/
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .service-button {
@@ -177,11 +195,7 @@ body {
   padding-bottom: 30px;
 }
 
-.container-service {
-  padding: 200px 15px;
-}
 /* BENEFITS */
-
 .benefits-titel {
   font-weight: 700;
   font-size: 14px;
@@ -199,20 +213,29 @@ body {
   padding-top: 10px;
   padding-right: 30px;
 }
+.benefits-list {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  display: flex;
+  margin-left: 30px;
+}
 
 /* about */
 
-.about-text,
-.command-text {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
 .about-list {
-  padding: 50px 0px 94px 0px;
+  display: flex;
 }
+
+.about-list > .about-item {
+  margin: 0 15px;
+}
+
+/*  command  */
+
+.command {
+  background: #f5f4fa;
+}
+
 .command-text {
   padding-top: 94px;
 }
@@ -231,22 +254,7 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--second-color);
-}
-
-.benefits-list {
-  display: flex;
-  margin-left: 30px;
-  margin-botto: ;
-}
-
-.about-list {
-  display: flex;
-}
-
-.about-list > .about-item {
-  margin: 0 15px;
 }
 
 .command-list {
@@ -257,11 +265,11 @@ body {
   margin: 0 15px;
 }
 .command-name {
-  padding-top: 30px;
-  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
-.command-trade {
-  padding-top: 5px;
+
+.command-container {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -269,6 +277,8 @@ body {
 .footer {
   height: 252px;
   background: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -310,13 +320,13 @@ body {
   color: var(--accent-color);
 }
 
-.footer-list {
-  padding: 20px 1154px 60px 0px;
-}
-
 .footer-list a {
   display: flex;
 }
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 /* portfolio*/
 
 .navigation-button {
@@ -329,6 +339,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--first-color);
   cursor: pointer;
+  padding: 6px 22px;
+  margin-left: 8px;
+  display: flex;
+  display: block;
 }
 
 .navigation-item :hover,
@@ -339,16 +353,9 @@ body {
 
 .navigation-list {
   display: flex;
-  padding-top: 94px;
+  margin-bottom: 50px;
   display: block;
   align-content: center;
-}
-.navigation-button {
-  margin: 0 auto;
-  margin-left: 8px;
-  padding: 6px 22px;
-  display: flex;
-  display: block;
 }
 
 .photo-tetl {
@@ -367,11 +374,7 @@ body {
 }
 .photo-list {
   display: flex;
-  text-align: center;
   flex-wrap: wrap;
-  font-weight: calc(100% / 3);
-  padding-top: 50px;
-  padding-bottom: 94px;
 }
 
 .photo-list > .photo-item {

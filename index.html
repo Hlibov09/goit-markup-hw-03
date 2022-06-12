@@ -19,8 +19,8 @@
 </head>
 
 <body>
-  <div class="container">
-    <header class="heder">
+  <header class="heder">
+    <div class="container header-flex">
       <nav class="heder-nav">
         <a class="heder-logo link href=" /" lang="en">Web<span class="logo-accent">Studio</span></a>
         <ul class="heder-list list">
@@ -33,8 +33,9 @@
         <li><a href="mailto:info@devstudio.com" class="mail link">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111" class="tel link">+38 096 111 11 11</a></li>
       </ul>
-    </header>
-  </div>
+    </div>
+  </header>
+
 
   <main>
     <section class="service">
@@ -51,7 +52,7 @@
       <div class="container">
         <!-- (Заглввие вне дизайна) -->
         <h2 class="benefits-text visually-hidden">Преймущества</h2>
-        <ul class="benefits-list list section">
+        <ul class="benefits-list list">
           <li class="benefits-item">
             <h3 class="benefits-titel">Внимание к деталям</h3>
             <p class="benefits-after-titel">Идейные соображения, а также начало повседневной работы по формированию
@@ -80,8 +81,8 @@
 
     <section class="about">
       <div class="container">
-        <h2 class="about-text">Чем мы занимаемся</h2>
-        <ul class="about-list list">
+        <h2 class="about-text title">Чем мы занимаемся</h2>
+        <ul class="about-list list section">
           <li class="about-item"><img src="./img/box-2.jpg" alt="проэкт на ноутбуке" width="370" height="294" /></li>
           <li class="about-item"><img src="./img/box-3.jpg" alt="проэкт на планшете" width="370" height="294" /></li>
           <li class="about-item"><img src="./img/box-1.jpg" alt="проэкт на бумаге" width="370" height="294" /></li>
@@ -91,27 +92,35 @@
 
     <section class="command">
       <div class="container">
-        <h2 class="command-text">Наша команда</h2>
+        <h2 class="command-text title">Наша команда</h2>
         <ul class="command-list list section">
           <li class="command-item">
             <img src="./img/img-4.jpg" alt="сотрудник кмпании" width="270" height="260" />
-            <h3 class="command-name">Игорь Демьяненко</h3>
-            <p lang="en" class="command-trade">Product Designerr</p>
+            <div class="command-container">
+              <h3 class="command-name">Игорь Демьяненко</h3>
+              <p lang="en" class="command-trade">Product Designerr</p>
+            </div>
           </li>
           <li class="command-item">
             <img src="./img/img-1.jpg" alt="сотрудник кмпании" width="270" height="260" />
-            <h3 class="command-name">Ольга Репина</h3>
-            <p lang="en" class="command-trade">Frontend Developer</p>
+            <div class="command-container">
+              <h3 class="command-name">Ольга Репина</h3>
+              <p lang="en" class="command-trade">Frontend Developer</p>
+            </div>
           </li>
           <li class="command-item">
             <img src="./img/img-2.jpg" alt="сотрудник кмпании" width="270" height="260" />
-            <h3 class="command-name">Николай Тарасов</h3>
-            <p lang="en" class="command-trade">Marketing</p>
+            <div class="command-container">
+              <h3 class="command-name">Николай Тарасов</h3>
+              <p lang="en" class="command-trade">Marketing</p>
+            </div>
           </li>
           <li class="command-item">
             <img src="./img/img-3.jpg" alt="сотрудник кмпании" width="270" height="260" />
-            <h3 class="command-name">Михаил Ермаков</h3>
-            <p lang="en" class="command-trade">UI Designer</p>
+            <div class="command-container">
+              <h3 class="command-name">Михаил Ермаков</h3>
+              <p lang="en" class="command-trade">UI Designer</p>
+            </div>
           </li>
         </ul>
       </div>
