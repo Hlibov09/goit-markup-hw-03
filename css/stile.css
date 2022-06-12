@@ -6,6 +6,7 @@
   --footer-mail-tel-color: rgba(255, 255, 255, 0.6);
   --background-color: #2f303a;
   --service-button: #188ce8;
+  --background-comand: #f5f4fa;
 }
 p,
 h1,
@@ -92,6 +93,12 @@ body {
   margin: 0px auto;
   left: 0px;
   top: 0px;
+}
+.header {
+  border-bottom: #ececec;
+  padding-bottom: 80px;
+  height: 1px;
+  width: 1600px;
 }
 
 .heder-nav {
@@ -233,7 +240,7 @@ body {
 /*  command  */
 
 .command {
-  background: #f5f4fa;
+  background: var(--background-comand);
 }
 
 .command-text {
@@ -350,10 +357,13 @@ body {
   color: var(--third-color);
   background: var(--accent-color);
 }
-
+.navigation-item {
+  float: left;
+}
 .navigation-list {
   display: flex;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
+  padding-top: 94px;
   display: block;
   align-content: center;
 }
