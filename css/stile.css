@@ -348,7 +348,6 @@ body {
   cursor: pointer;
   padding: 6px 22px;
   margin-left: 8px;
-  display: flex;
   display: block;
 }
 
@@ -357,15 +356,13 @@ body {
   color: var(--third-color);
   background: var(--accent-color);
 }
-.navigation-item {
-  float: left;
-}
+
 .navigation-list {
   display: flex;
-  /*margin-bottom: 50px;*/
   padding-top: 94px;
-  display: block;
   align-content: center;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .photo-tetl {
